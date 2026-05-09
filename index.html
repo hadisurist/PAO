@@ -371,7 +371,7 @@
                 document.getElementById('attendance-report-link').innerHTML = "<span style='color:red;'>All fields are required.</span>";
                 return;
             }
-            const url = `http://192.168.55.38:2051/reports/rwservlet?userid=ipihr/i@ipihr&desformat=PDF&destype=cache&report=/u01/global/stepshr/hr/report/att_view_based.rdf&P_FDATE=${encodeURIComponent(fdate)}&P_TDATE=${encodeURIComponent(tdate)}&P_EMPCODE=${encodeURIComponent(empcode)}`;
+            const url = `http://192.168.55.38:2050/reports/rwservlet?userid=ipihr/i@ipihr&desformat=PDF&destype=cache&report=/u01/global/stepshr/hr/report/att_view_based.rdf&P_FDATE=${encodeURIComponent(fdate)}&P_TDATE=${encodeURIComponent(tdate)}&P_EMPCODE=${encodeURIComponent(empcode)}`;
             window.open(url, '_blank');
             document.getElementById('attendance-report-link').innerHTML = `<a href="${url}" target="_blank"></a>`;
         });
